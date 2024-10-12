@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación por Bloques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blue Combat</h1>
+        
+        <!-- Entradas iniciales -->
+        <label for="primeras_12h">Primera 12 horas (si/no/rr/ss/h):</label>
+        <input type="text" id="primeras_12h">
+        
+        <label for="segundas_12h">Segunda 12 horas (si/no):</label>
+        <input type="text" id="segundas_12h">
+        
+        <button id="evaluar-btn">Evaluar</button>
+
+        <!-- Campos para la evaluación por bloques -->
+        <div id="bloques" class="hidden">
+            <h2>Evaluación por bloques</h2>
+
+            <label for="guerra1_12h1">Guerra 1, primeras 12 horas (si/no):</label>
+            <input type="text" id="guerra1_12h1">
+
+            <label for="guerra1_12h2">Guerra 1, segundas 12 horas (si/no):</label>
+            <input type="text" id="guerra1_12h2">
+
+            <label for="guerra2_12h1">Guerra 2, primeras 12 horas (si/no):</label>
+            <input type="text" id="guerra2_12h1">
+
+            <label for="guerra2_12h2">Guerra 2, segundas 12 horas (si/no):</label>
+            <input type="text" id="guerra2_12h2">
+            
+            <button id="evaluar-bloques-btn">Evaluar Bloques</button>
+        </div>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
