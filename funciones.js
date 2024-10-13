@@ -34,16 +34,16 @@ document.getElementById('evaluar-btn').addEventListener('click', function () {
         return;
     }
 
-    // Si se ingresa "rr" en ambas entradas, no se activa la evaluación por bloques
-    if (primeras_12h === 'rr' && segundas_12h === 'rr') {
-        alert('Condiciones no cumplidas. No se puede ingresar "rr" dos veces.');
+    // Si se ingresa "rr" en las primeras 12 horas, no se activa la evaluación por bloques
+    if (primeras_12h === 'rr') {
+        alert('Condiciones no cumplidas. No se puede ingresar "rr" en las primeras 12 horas.');
         return;
     }
 
     // Evaluación para activación de bloques
-    if ((primeras_12h === 'si' && segundas_12h === 'no') ||
-        (primeras_12h === 'no' && segundas_12h === 'si') ||
-        (primeras_12h === 'rr' || segundas_12h === 'rr')) {
+    if (segundas_12h === 'rr' || 
+        (primeras_12h === 'si' && segundas_12h === 'no') || 
+        (primeras_12h === 'no' && segundas_12h === 'si')) {
         
         alert('Se ha activado la evaluación por bloques.');
         document.getElementById('bloques').classList.remove('hidden');
