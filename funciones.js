@@ -8,6 +8,7 @@ function evaluarTabla(g1_12h1, g1_12h2, g2_12h1, g2_12h2) {
         'si_no_si_si': 'si',
         'si_no_si_no': 'no',
         'si_no_no_no': 'no',
+        'si_no_no_si': 'no',
         'no_si_si_si': 'si',
         'no_si_si_no': 'no',
         'no_si_no_no': 'no',
